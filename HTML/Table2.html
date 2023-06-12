@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,tr,td,th {
+        border: 1px black solid;
+        border-collapse: collapse;
+        text-align:center;
+    }
+    td,th {
+        padding:20px;
+    }
+    th {
+        background-color:beige;
+        color:black;
+    }
+    td {
+        background-color:yellow;
+        color:black;
+    }
+</style>
+<body>
+    <h3>Product info</h3>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Flavours</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Milk</td>
+            <td>Almond</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                These are exclusive flavours
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
