@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 400px;
+        }
+        table,tr,td,th {
+            border:2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+   <h3>Registration Form</h3>
+
+   <form method="Post" enctype="multipart/form-data" autocomplete="off">
+    <table>
+        <tr>
+            <th>Enter your first name</th>
+        <td>
+            <input type="text" name="firstname" id="firstname" placeholder="first name here" value="Swapnil" readonly required>
+        </td>
+        </tr>
+        <tr>
+            <th>Enter your last name</th>
+            <td>
+                <input type="text" name="lastname" id="lastname" autofocus required>
+            </td>
+        </tr>
+        <tr>
+            <th>Enter the password</th>
+            <td>
+                <input type="password" name="password" id="password" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Reenter your password</th>
+            <td>
+                <input type="password" name="confirmpassword" id="confirmpassword" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Enter your Email</th>
+            <td>
+                <input type="email" name="email" id="email" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Enter your mobile</th>
+            <td>
+                <input type="number" name="mobile" id="mobile" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Enter your address</th>
+            <td>
+                <textarea name="address" id="address" cols="22" rows="7" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>Select your gender</th>
+            <td>
+                <label for="">
+                    Male<input type="radio" name="gender" id="gender" value="male" required>
+                </label>
+                <label for="">
+                    Female <input type="radio" name="gender" id="gender" value="female" required>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th>Select your hobbies</th>
+            <td>
+                <label for="hobbies1">
+                    hobby1
+                    <input type="checkbox" name="hobbies1" id="hobbies1" value="cycling" required>
+                </label>
+
+                <label for="hobbies2">
+                    hobby2
+                    <input type="checkbox" name="hobbies2" id="hobbies2" value="riding" required>
+                </label>
+
+                <label for="hobbies3">
+                    hobby3
+                    <input type="checkbox" name="hobbies3" id="hobbies3" value="trekking" required>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Select your DOB</th>
+            <td>
+                <input type="date" name="dob" id="dob" required>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Select your country</th>
+            <td>
+                <select name="country" id="country" multiple>
+                    <option value="null">Choose your country</option>
+                    <option value="india">India</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="japan">Japan</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Save My Data">
+                <input type="reset" value="Reset Data">
+            </td>
+        </tr>
+    </table>
+   </form>
+</body>
+</html>

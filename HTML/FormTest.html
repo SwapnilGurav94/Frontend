@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form>
+        <div>
+            <label for="">Full Name*</label>
+            <input type="text" name="name" id="name" placeholder="FirstName LastName" required>
+        </div>
+
+        <div>
+            <label for="">Email Address*</label>
+            <input type="email" name="email" id="email" placeholder="EMAIL_ADDRESS" required>
+        </div>
+
+        <div>
+            <label for="">Tour Package</label>
+            <select name="Tourpackage" id=""> 
+                <option value="null">Select a package</option>
+                <option value="goa">GOA</option>
+                <option value="simla">SIMLA</option>
+                <option value="manali">MANALI</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Arrival Date*</label>
+            <input type="date" name="arrival" id="arrival" placeholder="m/d/y" required>
+        </div>
+
+        <div>
+            <label for="">Number of people*</label>
+            <input type="number" name="nos" id="nos" placeholder="UNKNOWN_TYPE" required>
+        </div>
+
+        <div>
+            <label for="">What would you want to avail*</label>
+            Boarding<input type="checkbox" name="offer1" id="" value="boarding">
+            Fooding<input type="checkbox" name="offer2" id="" value="fooding">
+            Sight Seeing<input type="checkbox" name="offer3" id="" value="sightseeing">
+        </div>
+
+        <div>
+            <label for="">Discount Cuopon</label>
+            <input type="text" name="cuopon" id="cuopon" placeholder="Unknown_type">
+        </div>
+
+        <div>
+            <label for="">Terms and Conditions*</label>
+            <input type="radio" name="terms" id="" value="Agree"> I Agree
+            <input type="radio" name="terms" id="" value="Disagree">I Disagree
+        </div>
+
+        <div>
+            <input type="submit" value="Complete Reservation">
+        </div>
+</body>
+</html>
