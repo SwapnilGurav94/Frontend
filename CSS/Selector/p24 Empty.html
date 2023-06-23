@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]:empty {
+            background-color: #ccc;
+        }
+
+        input[type="number"]:empty {
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>:empty</h3>
+    <form action="">
+        <label for="text">Name</label>
+        <input type="text" name="name" id="name"></input>
+
+        <label for="number">Number</label>
+        <input type="number" name="number" id="number"></input>
+    </form>
+</body>
+</html>
