@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            direction: rtl;
+        }
+
+        .p2 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        .p3 {
+            white-space: pre-wrap; /*pre, pre-wrap,pre-line*/
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum fugit ab commodi explicabo nihil voluptates repellendus necessitatibus est nisi natus, rem dolorem distinctio accusamus corrupti quia obcaecati. Recusandae, labore!</p>
+
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum fugit ab commodi explicabo nihil voluptates repellendus necessitatibus est nisi natus, rem dolorem distinctio accusamus corrupti quia obcaecati. Recusandae, labore!</p>
+
+    <pre>
+        function product(a,b){
+            return a * b;
+        }
+
+        product(123,33);
+    </pre>
+
+    <hr>
+
+    <p class="p3">
+        function product(a,b){
+            return a * b;
+        }
+
+        product(123,33);
+    </p>
+</body>
+</html>
