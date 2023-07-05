@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            padding:20px;
+            border: 2px solid #222;
+            counter-reset: ch;
+        }
+
+        h2::before {
+            counter-increment: ch;
+            content:counter(ch) ".";
+            color:orangered;
+        }
+
+        h4 {
+            margin-left: 30px;
+            counter-reset: subT;
+        }
+
+        h2 {
+            counter-reset: topic;
+        }
+
+        h4::before {
+            counter-increment: topic;
+            content: counter(ch) "." counter(topic) " ";
+        }
+
+        p {
+            margin-left: 60px;
+        }
+
+        p::before {
+            counter-increment: subT;
+            content: counter(ch) "." counter(topic) "." counter(subT) " ";
+        }
+    </style>
+</head>
+<body>
+    <h1>table of contents</h1>
+
+    <div class="container">
+        <h2>HTML</h2>
+            <h4>h1 tag</h4>
+                <p>h1 tag</p>
+                <p>h2 tag</p>
+                <p>h3 tag</p>
+                <p>h4 tag</p>
+            <h4>Format tags</h4>
+                <p>paragraph tags</p>
+                <p>Bold tags</p>
+                <p>Underline tags</p>
+            <h4>Tables</h4>
+            <h4>List</h4>
+                <p>Un Ordered list</p>
+                <p>Ordered list</p>
+                <p>definition list</p>
+            <h4>Form Tags</h4>
+        
+        <h2>CSS</h2>
+            <h4>Colors</h4>
+                <p>hex code</p>
+                <p>color name</p>
+                <p>rgb function</p>
+                <p>rgba function</p>
+            <h4>background</h4>
+            <h4>font</h4>
+                <p>Font family</p>
+                <p>Font size</p>
+                <p>Font Weight</p>
+
+        <h2>JavaScript</h2>
+            <h4>Variables</h4>
+                <p>Var keywords</p>
+                <p>let keywords</p>
+                <p>const keywords</p>
+            <h4>Operators</h4>
+            <h4>Conditions and loopings</h4>
+                <p>if</p>
+                <p>if and else</p>
+                <p>if, else if and else</p>
+            <h4>Arrays</h4>
+        
+        <h2>Jquery</h2>
+        <h2>Bootstrap 5</h2>
+    </div>
+</body>
+</html>
